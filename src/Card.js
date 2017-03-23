@@ -36,7 +36,7 @@ const Card = (props) => {
   ), cssModule);
 
   return (
-    <Tag {...attributes} className={classes} />
+    React.createElement(Tag, { ...attributes, className: classes })
   );
 };
 

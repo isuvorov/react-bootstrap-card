@@ -11,21 +11,20 @@ import CardImgOverlay from './CardImgOverlay';
 import CardSubtitle from './CardSubtitle';
 import CardText from './CardText';
 import CardTitle from './CardTitle';
-import wrap from './wrap';
 
-export {
-  Card,
-  CardLink,
-  CardGroup,
-  CardDeck,
-  CardColumns,
-  CardBlock,
-  CardFooter,
-  CardHeader,
-  CardImg,
-  CardImgOverlay,
-  CardSubtitle,
-  CardText,
-  CardTitle,
-  wrap,
+export default (rb) => {
+  rb.Card = Card;
+  rb.CardGroup = CardGroup;
+  rb.CardDeck = CardDeck;
+  rb.CardColumns = CardColumns;
+  rb.CardBlock = CardBlock;
+  rb.CardLink = CardLink;
+  rb.CardFooter = CardFooter;
+  rb.CardHeader = CardHeader;
+  rb.CardImg = CardImg;
+  rb.CardImgOverlay = CardImgOverlay;
+  rb.CardSubtitle = CardSubtitle;
+  rb.CardText = CardText;
+  rb.CardTitle = CardTitle;
+  return rb;
 };

@@ -27,7 +27,7 @@ const CardLink = (props) => {
   ), cssModule);
 
   return (
-    <Tag {...attributes} ref={getRef} className={classes} />
+    React.createElement(Tag, { ...attributes, ref: getRef, className: classes })
   );
 };
 

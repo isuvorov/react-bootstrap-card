@@ -1,13 +1,7 @@
 {
   "name": "react-bootstrap-card",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React Bootstrap Card components",
-  "main": "index.js",
-  "scripts": {
-    "babel-publish": "DEBUG=0 npm run babel-build && npm publish dist",
-    "babel-build": "rm -rf dist && mkdir dist && cp {package.json,yarn.lock,README.md} dist/ && babel src --out-dir dist --source-maps inline --copy-files",
-    "dev": "DEBUG=1 npm run babel-build -- --watch"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/isuvorov/react-bootstrap-card.git"
@@ -20,11 +14,21 @@
     "url": "https://github.com/isuvorov/react-bootstrap-card/issues"
   },
   "homepage": "https://github.com/isuvorov/react-bootstrap-card#readme",
+
+
+  "main": "index.js",
+  "scripts": {
+    "release": "DEBUG=0 npm run build && npm publish dist",
+    "build": "rm -rf dist && mkdir dist && cp {package.json,yarn.lock,README.md} dist/ && babel src --out-dir dist --source-maps inline --copy-files",
+    "dev": "DEBUG=1 npm run build -- --watch"
+  },
+
   "dependencies": {
     "classnames": "^2.2.3"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0",
+    "react-bootstrap": "^0.30.7"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",

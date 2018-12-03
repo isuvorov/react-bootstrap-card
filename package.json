@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-card",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Bootstrap Card components",
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "dev": "DEBUG=1 npm run build -- --watch"
   },
   "dependencies": {
-    "classnames": "2.2.3"
+    "classnames": "2.2.3",
+    "prop-types": "15.6.2"
   },
   "peerDependencies": {
     "react": "^16.4.0",
